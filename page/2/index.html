@@ -1,218 +1,384 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <title>有跡可尋</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="ちょっと病気で"/>
+<meta name="keywords" content="ちょっと病気で"/>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="https://kamikk.github.io/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://kamikk.github.io/media/css/tailwind.css">
+
 <link rel="stylesheet" href="https://kamikk.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="有跡可尋 - Atom Feed" href="https://kamikk.github.io/atom.xml">
 
-    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;900&amp;display=swap" rel="stylesheet">
 
-  <meta name="description" content="ちょっと病気で" />
-</head>
-<body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
+<!-- Modernizr JS -->
+<script src="https://kamikk.github.io/media/scripts/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://kamikk.github.io/media/scripts/respond.min.js"></scripts>
+<![endif]-->
 
-    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
-  <div class="flex justify-end px-4">
-    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
-      <i class="ri-close-line" v-show="showMenu"></i>
-      <i class="ri-menu-3-line" v-show="!showMenu"></i>
-    </div>
-  </div>
-  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
-    
-      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        🏠 Homepage
-      </a>
-    
-      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        Archives
-      </a>
-    
-      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        Tags
-      </a>
-    
-      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        About
-      </a>
-    
-    <a href="https://kamikk.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      RSS
+<!-- Comment -->
+
+
+
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
     </a>
-  </nav>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://kamikk.github.io/images/avatar.png" alt="有跡可尋"
+                 class="img-responsive">
+        </figure>
+        <a href="https://kamikk.github.io/post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>有跡可尋</h2>
+        <p>ちょっと病気で</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="fh5co-menu">
+
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://kamikk.github.io/tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://kamikk.github.io/tag/qOOK7J-AA/">📅 日常 | LIve</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/EHRDIKZKs/">💨 废话 | Chat</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/-IJA5rQoR/">📺 观影 | TV.F</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/4h0ecWSHX/">🔖 记录 | Repo</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/VqQ76ZbJt/">🎈 动画 | Anime</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/TwPSA8D-w/">📖 阅读 | Book</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/3o8p6O3t1/">🪐 脑洞</a></li>
+                
+            </ul>
+        </div>
+    </div>
 </div>
 
-    <div class="max-w-4xl w-full mx-auto pt-32">
-      
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a class="fh5co-social-btn" href="/"
+                        
+                        >
+                            🏠 Homepage
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="fh5co-social-btn" href="/archives"
+                        
+                        >
+                            Archives
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a style="color:#fff;">有跡可尋 </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
 
-      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+
+    <div class="container-fluid">
+      <div class="row fh5co-post-entry">
+
         
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://kamikk.github.io/post/captain-marvel/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《惊奇队长》
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2019-03-09</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        昨天看了惊奇队长，看完就感觉我这是看了一个爽片啊……卡罗尔或成漫威宇宙最大挂逼……这样的能力打爆灭霸还不是分分钟的事啊喂！可惜灭霸出来作妖的时候卡罗尔正忙着给新朋友斯克鲁人找买的时候房子……
-年轻寇森和局长真是萌点，年轻局长我都没认出来直到...
-      </div>
-      <a href="https://kamikk.github.io/post/captain-marvel/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://i.loli.net/2021/09/11/7OBLnYuX4Dx83gc.png" alt="《惊奇队长》">
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://kamikk.github.io/post/deadpool2/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《死侍2》重制版一刷
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2019-02-17</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/the-wanering-earth/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/the-wanering-earth.jpg" alt="《流浪地球》，2019年中国第一交通安全宣传片" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="tag">📺 观影 | TV.F </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/the-wanering-earth/">《流浪地球》，2019年中国第一交通安全宣传片</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2019-02-15</span>
+          </article>
         
-不，不是……↓↓
-
-今天久违的阴天！虽然只有半天没下雨！哈哈哈~ 但是也太棒啦~
-跑去了老远去的电影院刷了《死侍2》（全城还在排片的就剩2家影院了…）~oh I llllllllove it！可能因为先看了原版的关系。感觉剪了很多精彩内容...
-      </div>
-      <a href="https://kamikk.github.io/post/deadpool2/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://kamikk.github.io/post-images/deadpool2.jpg" alt="《死侍2》重制版一刷">
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://kamikk.github.io/post/the-wanering-earth/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《流浪地球》，2019年中国第一交通安全宣传片
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2019-02-15</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        对于《流浪地球》这部号称中国里程碑式科幻电影，我觉得，一部分人如原书迷或科幻迷等，初始期待值很低，结果看了之后远超预期，赞不绝口，成就大型“真香”现场；而另一部分像我这样的，在各种“中国唯一硬核科幻片”以及别人的安利下怀着仰望的心情走进电影...
-      </div>
-      <a href="https://kamikk.github.io/post/the-wanering-earth/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://kamikk.github.io/post-images/the-wanering-earth.jpg" alt="《流浪地球》，2019年中国第一交通安全宣传片">
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://kamikk.github.io/post/the-amazing-spider-man/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《超凡蜘蛛侠1》~
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2019-02-11</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        晚上看了《超凡蜘蛛侠》，安德鲁·加菲尔德还蛮帅的！Gwen是不是戴了大直径美瞳还是眼线太粗，眼睛大的出奇= =，有点怪异感。
-故事感觉比苦大仇深三观颠覆的老版蜘蛛侠1好啊，为啥玩烂了……不过玩烂了好，要不然是不是就没有荷兰弟的小蜘蛛啦！！超...
-      </div>
-      <a href="https://kamikk.github.io/post/the-amazing-spider-man/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://kamikk.github.io/post-images/the-amazing-spider-man.jpg" alt="《超凡蜘蛛侠1》~">
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://kamikk.github.io/post/avengers3/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《复联3》复习ing 和 《死侍2》~
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2019-02-10</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        颓废的假期~下午复习了一下《复联3》，戴上耳机果然听觉享受不一样啊啊啊！！！复联3真的好看！！除了中间一些膈应的情节，其他都非常棒！！！寡姐好美！！Tony真的是让人敬佩的hero，最后解除了盔甲以凡人之躯对抗灭霸，真的很厉害……唯一的Ir...
-      </div>
-      <a href="https://kamikk.github.io/post/avengers3/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://kamikk.github.io/post-images/avengers3.jpg" alt="《复联3》复习ing 和 《死侍2》~">
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://kamikk.github.io/post/spider-man-homecoming/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《Spider-Man：Homecoming》重温~
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2019-02-09</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/the-amazing-spider-man/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/the-amazing-spider-man.jpg" alt="《超凡蜘蛛侠1》~" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="tag">📺 观影 | TV.F </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/the-amazing-spider-man/">《超凡蜘蛛侠1》~</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2019-02-11</span>
+          </article>
         
-还记得这部是在电影院和小伙伴们一起看的，看完之后小伙伴吐槽说这才不是蜘蛛侠什么的，当时没有补漫威电影也没有看过之前版本的Spider-Man，不过看完立马就被这部圈粉了啊啊～～青少年Spider-Man的烦恼太萌了！也是因为这部对钢铁侠产...
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/avengers3/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/avengers3.jpg" alt="《复联3》复习ing 和 《死侍2》~" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="tag">📺 观影 | TV.F </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/avengers3/">《复联3》复习ing 和 《死侍2》~</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2019-02-10</span>
+          </article>
+        
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/spider-man-homecoming/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/spider-man-homecoming.png" alt="《Spider-Man：Homecoming》重温~" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="tag">📺 观影 | TV.F </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/spider-man-homecoming/">《Spider-Man：Homecoming》重温~</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2019-02-09</span>
+          </article>
+        
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/old-version-spider-man/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/old-version-spider-man.jpg" alt="《蜘蛛侠1》观后感（划掉）吐槽" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="tag">📺 观影 | TV.F </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/old-version-spider-man/">《蜘蛛侠1》观后感（划掉）吐槽</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2019-02-09</span>
+          </article>
+        
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/xiangfeishengjiutanlianai/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/xiangfeishengjiutanlianai.jpg" alt="【扫文】想飞升就谈恋爱" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/4h0ecWSHX/" class="tag">🔖 记录 | Repo </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/xiangfeishengjiutanlianai/">【扫文】想飞升就谈恋爱</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2018-11-18</span>
+          </article>
+        
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/writing-software/">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/EHRDIKZKs/" class="tag">💨 废话 | Chat </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/writing-software/">写作软件试用</a>
+            </h3>
+            <div class="fh5co-article-more"><p>无聊随手百度了下传说中的自动写作软件</p>
+</div>
+			<span class="fh5co-meta fh5co-date">2017-08-24</span>
+          </article>
+        
+            <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12 animate-box" style="height: 25em;">
+            <figure class="img-box">
+              <a href="https://kamikk.github.io/post/with-you/">
+                
+                  <img data-original="https://kamikk.github.io/post-images/with-you.jpg" alt="《最好的我们》REPO" class="img-responsive img-rounded lazy">
+                
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              
+                    
+                        <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="tag">📺 观影 | TV.F </a>
+                    
+              
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="https://kamikk.github.io/post/with-you/">《最好的我们》REPO</a>
+            </h3>
+            <div class="fh5co-article-more"></div>
+			<span class="fh5co-meta fh5co-date">2017-05-25</span>
+          </article>
+        
+        <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+
       </div>
-      <a href="https://kamikk.github.io/post/spider-man-homecoming/" class="btn">
-        Read more
-      </a>
+
+      <div class="pagination-box animate-box">
+        
+          <a href="https://kamikk.github.io/" class="prev">
+            上一页
+          </a>
+        
+        
+          <a href="https://kamikk.github.io/page/3/" class="next">下一页
+          </a>
+        
+      </div>
     </div>
-    
-      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://kamikk.github.io/post-images/spider-man-homecoming.png" alt="《Spider-Man：Homecoming》重温~">
-    
-  </div>
-  
-      </div>
 
-      
-  <div class="my-4 flex justify-between px-4 md:px-0">
     
-      <a href="https://kamikk.github.io/" class="btn btn-white">
-        <i class="ri-arrow-left-line mr-4"></i>
-        上一页
-      </a>
-    
-    
-      <a href="https://kamikk.github.io/page/3/" class="btn btn-white">
-        下一页
-        <i class="ri-arrow-right-line ml-4"></i>
-      </a>
-    
-  </div>
-
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+<footer id="fh5co-footer">
+  <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
 </footer>
 
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://kamikk.github.io/media/scripts/main.js"></script>
-</body>
 
+    <!-- jQuery -->
+<script src="https://kamikk.github.io/media/scripts/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://kamikk.github.io/media/scripts/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://kamikk.github.io/media/scripts/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://kamikk.github.io/media/scripts/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://kamikk.github.io/media/scripts/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://kamikk.github.io/media/scripts/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://kamikk.github.io/media/scripts/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+</script>
+
+
+
+
+  </body>
 </html>

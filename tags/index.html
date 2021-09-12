@@ -1,111 +1,246 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <title>有跡可尋</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="ちょっと病気で"/>
+<meta name="keywords" content="ちょっと病気で"/>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="https://kamikk.github.io/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://kamikk.github.io/media/css/tailwind.css">
+
 <link rel="stylesheet" href="https://kamikk.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="有跡可尋 - Atom Feed" href="https://kamikk.github.io/atom.xml">
 
-    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;900&amp;display=swap" rel="stylesheet">
 
-  <meta name="description" content="ちょっと病気で" />
+<!-- Modernizr JS -->
+<script src="https://kamikk.github.io/media/scripts/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://kamikk.github.io/media/scripts/respond.min.js"></scripts>
+<![endif]-->
+
+<!-- Comment -->
+
+
+
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
+
 </head>
 <body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
-    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
-  <div class="flex justify-end px-4">
-    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
-      <i class="ri-close-line" v-show="showMenu"></i>
-      <i class="ri-menu-3-line" v-show="!showMenu"></i>
-    </div>
-  </div>
-  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
-    
-      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        🏠 Homepage
-      </a>
-    
-      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        Archives
-      </a>
-    
-      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        Tags
-      </a>
-    
-      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        About
-      </a>
-    
-    <a href="https://kamikk.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      RSS
+<div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
     </a>
-  </nav>
-</div>
-    <div class="max-w-4xl w-full mx-auto pt-32">
-      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/qOOK7J-AA/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              📅 日常 | LIve（6）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/EHRDIKZKs/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              💨 废话 | Chat（5）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/-IJA5rQoR/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              📺 观影 | TV.F（8）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/4h0ecWSHX/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              🔖 记录 | Repo（8）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/VqQ76ZbJt/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              🎈 动画 | Anime（1）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/TwPSA8D-w/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              📖 阅读 | Book（1）
-            </a>
-          </div>
-        
-          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
-            <a href="https://kamikk.github.io/tag/3o8p6O3t1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-              <i class="ri-hashtag"></i>
-              🪐 脑洞（1）
-            </a>
-          </div>
-        
-      </div>
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</footer>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://kamikk.github.io/images/avatar.png" alt="有跡可尋"
+                 class="img-responsive">
+        </figure>
+        <a href="https://kamikk.github.io/post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>有跡可尋</h2>
+        <p>ちょっと病気で</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://kamikk.github.io/media/scripts/main.js"></script>
+
+    <div class="fh5co-menu">
+
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://kamikk.github.io/tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://kamikk.github.io/tag/qOOK7J-AA/">📅 日常 | LIve</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/EHRDIKZKs/">💨 废话 | Chat</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/-IJA5rQoR/">📺 观影 | TV.F</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/4h0ecWSHX/">🔖 记录 | Repo</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/VqQ76ZbJt/">🎈 动画 | Anime</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/TwPSA8D-w/">📖 阅读 | Book</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/3o8p6O3t1/">🪐 脑洞</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a class="fh5co-social-btn" href="/"
+                        
+                        >
+                            🏠 Homepage
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="fh5co-social-btn" href="/archives"
+                        
+                        >
+                            Archives
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a style="color:#fff;">有跡可尋 </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container-fluid" style="height: 100%;">
+    <div class="row fh5co-post-entry">
+
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/qOOK7J-AA/">📅 日常 | LIve</a>
+                </h2>
+            </article>
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/EHRDIKZKs/">💨 废话 | Chat</a>
+                </h2>
+            </article>
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/-IJA5rQoR/">📺 观影 | TV.F</a>
+                </h2>
+            </article>
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/4h0ecWSHX/">🔖 记录 | Repo</a>
+                </h2>
+            </article>
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/VqQ76ZbJt/">🎈 动画 | Anime</a>
+                </h2>
+            </article>
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/TwPSA8D-w/">📖 阅读 | Book</a>
+                </h2>
+            </article>
+        
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <h2 class="fh5co-article-title">
+                    <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                    <a href="https://kamikk.github.io/tag/3o8p6O3t1/">🪐 脑洞</a>
+                </h2>
+            </article>
+        
+        <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+
+    </div>
+
+    
+<footer id="fh5co-footer">
+  <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
+</footer>
+
+</div>
+
+<!-- jQuery -->
+<script src="https://kamikk.github.io/media/scripts/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://kamikk.github.io/media/scripts/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://kamikk.github.io/media/scripts/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://kamikk.github.io/media/scripts/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://kamikk.github.io/media/scripts/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://kamikk.github.io/media/scripts/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://kamikk.github.io/media/scripts/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+</script>
+
+
+
+
 </body>
 </html>

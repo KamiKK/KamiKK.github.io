@@ -1,166 +1,501 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <title>有跡可尋</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="description" content="ちょっと病気で"/>
+<meta name="keywords" content="ちょっと病気で"/>
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="https://kamikk.github.io/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://kamikk.github.io/media/css/tailwind.css">
+
 <link rel="stylesheet" href="https://kamikk.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="有跡可尋 - Atom Feed" href="https://kamikk.github.io/atom.xml">
 
-    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;900&amp;display=swap" rel="stylesheet">
 
-  <meta name="description" content="ちょっと病気で" />
+<!-- Modernizr JS -->
+<script src="https://kamikk.github.io/media/scripts/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://kamikk.github.io/media/scripts/respond.min.js"></scripts>
+<![endif]-->
+
+<!-- Comment -->
+
+
+
+<!-- katex -->
+<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+
+
 </head>
 <body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
-
-    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
-  <div class="flex justify-end px-4">
-    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
-      <i class="ri-close-line" v-show="showMenu"></i>
-      <i class="ri-menu-3-line" v-show="!showMenu"></i>
-    </div>
-  </div>
-  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
-    
-      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        🏠 Homepage
-      </a>
-    
-      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        Archives
-      </a>
-    
-      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        Tags
-      </a>
-    
-      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        About
-      </a>
-    
-    <a href="https://kamikk.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      RSS
+<div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
     </a>
-  </nav>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://kamikk.github.io/images/avatar.png" alt="有跡可尋"
+                 class="img-responsive">
+        </figure>
+        <a href="https://kamikk.github.io/post/about/"><h3 class="heading">ABOUT ME</h3></a>
+        <h2>有跡可尋</h2>
+        <p>ちょっと病気で</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="fh5co-menu">
+
+        <!-- 标签 -->
+        <div class="fh5co-box">
+            <a href="https://kamikk.github.io/tags/"><h3 class="heading">👉标签</h3></a>
+            <ul>
+                
+                    <li><a href="https://kamikk.github.io/tag/qOOK7J-AA/">📅 日常 | LIve</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/EHRDIKZKs/">💨 废话 | Chat</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/-IJA5rQoR/">📺 观影 | TV.F</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/4h0ecWSHX/">🔖 记录 | Repo</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/VqQ76ZbJt/">🎈 动画 | Anime</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/TwPSA8D-w/">📖 阅读 | Book</a></li>
+                
+                    <li><a href="https://kamikk.github.io/tag/3o8p6O3t1/">🪐 脑洞</a></li>
+                
+            </ul>
+        </div>
+    </div>
 </div>
 
-    <div class="max-w-4xl w-full mx-auto pt-32">
-      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/cp-daika/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                【CP】带卡
-              </a>
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a class="fh5co-social-btn" href="/"
+                        
+                        >
+                            🏠 Homepage
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="fh5co-social-btn" href="/archives"
+                        
+                        >
+                            Archives
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a style="color:#fff;">有跡可尋 </a>
+                </h1>
             </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/zhenhunjie-Season1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                【ACG】镇魂街·第一季OVER
-              </a>
+        </div>
+    </div>
+</header>
+
+
+<div class="container-fluid">
+    <div class="row fh5co-post-entry single-entry">
+        <div class="col-xs-12 col-xs-offset-0 animate-box">
+
+            <div class="col-xs-12 col-xs-offset-0 text-center content-article">
+
+                <div class="row">
+
+                    
+                    <h2 class="text-center archives-title">
+                        All Posts
+                    </h2>
+
+                    
+                    <div class="row post-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-center post-year tag-title">
+                            <h3>2016</h3>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-left">
+                            <ul class="post-list">
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/cp-daika/" target="_blank">
+                                        <span class="post-title">【CP】带卡</span>
+                                        <span class="post-day">2016-12-19</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/zhenhunjie-Season1/" target="_blank">
+                                        <span class="post-title">【ACG】镇魂街·第一季OVER</span>
+                                        <span class="post-day">2016-12-04</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/meng-sang-shi-wei-cheng/" target="_blank">
+                                        <span class="post-title">【梦】丧尸围城</span>
+                                        <span class="post-day">2016-11-10</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/Saturday/" target="_blank">
+                                        <span class="post-title">星期六</span>
+                                        <span class="post-day">2016-11-05</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/long-zu-yao-wan-jie-liao/" target="_blank">
+                                        <span class="post-title">龙族要完结了？！</span>
+                                        <span class="post-day">2016-10-23</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/zhe-guo-wo-bu-bei/" target="_blank">
+                                        <span class="post-title">《这锅我不背》REPO</span>
+                                        <span class="post-day">2016-10-16</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/hui/" target="_blank">
+                                        <span class="post-title">回</span>
+                                        <span class="post-day">2016-10-06</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/friendship-forever/" target="_blank">
+                                        <span class="post-title">敬友谊天长地久</span>
+                                        <span class="post-day">2016-10-01</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/zhe-she-ding-beng-le/" target="_blank">
+                                        <span class="post-title">《这设定崩了》REPO</span>
+                                        <span class="post-day">2016-09-29</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/huan-ban-x1/" target="_blank">
+                                        <span class="post-title">换版x1</span>
+                                        <span class="post-day">2016-06-26</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row post-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-center post-year tag-title">
+                            <h3>2015</h3>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-left">
+                            <ul class="post-list">
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/longzu4/" target="_blank">
+                                        <span class="post-title">龙4在手，天下我有=3=</span>
+                                        <span class="post-day">2015-12-27</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row post-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-center post-year tag-title">
+                            <h3>2014</h3>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-left">
+                            <ul class="post-list">
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/Stationery-lover/" target="_blank">
+                                        <span class="post-title">在文具瘋子路上越走越遠*多圖慎入*</span>
+                                        <span class="post-day">2014-10-08</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/happy-National-Day/" target="_blank">
+                                        <span class="post-title">国庆快乐*多图慎入*</span>
+                                        <span class="post-day">2014-10-01</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/14-09-29/" target="_blank">
+                                        <span class="post-title">@140929</span>
+                                        <span class="post-day">2014-09-29</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/Unboxing-some-stationeries/" target="_blank">
+                                        <span class="post-title">Some文具開箱*多圖慎入*</span>
+                                        <span class="post-day">2014-09-27</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/jie-you-za-huo-dian/" target="_blank">
+                                        <span class="post-title">【推书】《解忧杂货店》</span>
+                                        <span class="post-day">2014-09-24</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/zao-an/" target="_blank">
+                                        <span class="post-title">早安</span>
+                                        <span class="post-day">2014-09-22</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/kaichu-duanzi1/" target="_blank">
+                                        <span class="post-title">【脑洞】恺楚@段子1</span>
+                                        <span class="post-day">2014-09-19</span>
+                                    </a>
+                                </li>
+                                
+                            
+                                
+                                <li class="post-item">
+                                    <a href="https://kamikk.github.io/post/2014-09-11/" target="_blank">
+                                        <span class="post-title">屠龙少年踏上新英雄旅途的起点</span>
+                                        <span class="post-day">2014-09-11</span>
+                                    </a>
+                                </li>
+                                
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                </div>
             </div>
-          </div>
+        </div>
+    </div>
+
+      <div class="pagination-box animate-box">
         
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/meng-sang-shi-wei-cheng/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                【梦】丧尸围城
-              </a>
-            </div>
-          </div>
+          <a href="https://kamikk.github.io/archives/" class="prev">
+            上一页
+          </a>
         
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/long-zu-yao-wan-jie-liao/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                龙族要完结了？！
-              </a>
-            </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/zhe-guo-wo-bu-bei/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                《这锅我不背》REPO
-              </a>
-            </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/zhe-she-ding-beng-le/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                《这设定崩了》REPO
-              </a>
-            </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/jie-you-za-huo-dian/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                【推书】《解忧杂货店》
-              </a>
-            </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/zao-an/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                早安
-              </a>
-            </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/kaichu-duanzi1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                【脑洞】恺楚@段子1
-              </a>
-            </div>
-          </div>
-        
-          <div class="px-8 pb-5 flex relative overflow-hidden">
-            
-            <div class="flex-1">
-              <a href="https://kamikk.github.io/post/2014-09-11/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-                屠龙少年踏上新英雄旅途的起点
-              </a>
-            </div>
-          </div>
         
       </div>
+</div>
 
-      
-  <div class="my-4 flex justify-between px-4 md:px-0">
-    
-      <a href="https://kamikk.github.io/archives/" class="btn btn-white">
-        <i class="ri-arrow-left-line mr-4"></i>
-        上一页
-      </a>
-    
-    
-  </div>
 
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+<footer id="fh5co-footer">
+  <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
 </footer>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://kamikk.github.io/media/scripts/main.js"></script>
+
+
+<!-- jQuery -->
+<script src="https://kamikk.github.io/media/scripts/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="https://kamikk.github.io/media/scripts/jquery.lazyload.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://kamikk.github.io/media/scripts/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://kamikk.github.io/media/scripts/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://kamikk.github.io/media/scripts/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://kamikk.github.io/media/scripts/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://kamikk.github.io/media/scripts/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
+
+<script type="application/javascript">
+    // 代码高亮
+    hljs.initHighlightingOnLoad();
+
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
+    });
+
+    
+</script>
+
+
+
+
 </body>
 </html>

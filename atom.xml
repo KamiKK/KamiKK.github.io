@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kamikk.github.io</id>
     <title>有跡可尋</title>
-    <updated>2021-09-10T16:58:42.450Z</updated>
+    <updated>2021-09-12T08:02:10.798Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kamikk.github.io"/>
     <link rel="self" href="https://kamikk.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://kamikk.github.io/post/some-balabala/">
         </link>
         <updated>2021-09-02T16:56:13.000Z</updated>
-        <content type="html"><![CDATA[<p>白天就一直在思考需不需要把真正的纯日记和其他博文分开，现在又想着，突然就感觉有一丝丝的难过。</p>
+        <summary type="html"><![CDATA[<p><strong>Tips：</strong> 负能量勿入。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>Tips：</strong> 负能量勿入。</p>
+<!-- more -->
+<p>白天就一直在思考需不需要把真正的纯日记和其他博文分开，现在又想着，突然就感觉有一丝丝的难过。</p>
 <p>在我坐在电脑前敲字的时候，我的脑海里有什么呢？</p>
 <p>好像什么都没有。</p>
 <p>如果情绪有一层水面，那么最近的我总是浮于其上，无法下落，触摸不到那些曾在我记忆里鲜明真实的情绪，包括现在，即使感到了那么一点点难过，也只是一点点而已。</p>
@@ -32,7 +36,10 @@
         <link href="https://kamikk.github.io/post/some-little-small-update/">
         </link>
         <updated>2021-09-02T16:12:40.000Z</updated>
-        <content type="html"><![CDATA[<p>对主题的修改欲望就像多动症似的 :arrow:</p>
+        <summary type="html"><![CDATA[<p>「修改主题多动症又犯了」</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>「修改主题多动症又犯了」</p>
+<!-- more -->
 <p>之前左右比例是4:6，看着总感觉文章页太靠右了然后就改成了35%:65%，改完之后突然想到笔记本显示是缩放150%的，正常1920×1080分辨率下浏览是怎样的呢，于是就把缩放比例改回100%看了下……</p>
 <p>惨案……</p>
 <p>不仅眼睛快瞎了，还发现这个主题的布局在高分辨率下很怪，因为铺满全屏，右边的文章页拉得老宽了，图片也变形了（宽），明明我调试的时候选好了满意的比例 😢 这样对比之下还是单栏居中主题好啊…… 😢</p>
@@ -77,7 +84,7 @@
 <p>《X战警》全系列（教授实惨……）</p>
 <p>《白蛇：缘起》/《灵能百分百》/《异度侵入》/《虚构推理》/《思维覆写（pet）》/《慎重勇者》/《ONE PUNCH-MAN 2》/《OVERLORD》（刷了3季但感到不适）</p>
 <p>《狐妖小红娘》（⭐⭐⭐⭐⭐刚看的时候还觉得有点尬，剧情展开之后……555赔我眼药水钱）</p>
-<p>《刀剑神域<sub>爱丽丝篇</sub>异界战争》（下半年出的下半部至今没看，听说剧情后想骂人，我好不容易等到亚丝娜上线就这？？？）</p>
+<p>《刀剑神域～爱丽丝篇～异界战争》（下半年出的下半部至今没看，听说剧情后想骂人，我好不容易等到亚丝娜上线就这？？？）</p>
 <p>《火影》刷完。</p>
 <p>补充：《鬼灭之刃》（⭐⭐⭐⭐⭐特效+音乐是20年看过最棒！！不过剧情相比之下倒是比较平凡）</p>
 <p> </p>
@@ -95,7 +102,10 @@
         <link href="https://kamikk.github.io/post/happy-birthday/">
         </link>
         <updated>2021-08-24T16:27:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>拖了几天后来补记一下。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>拖了几天后来补记一下。</p>
+<!-- more -->
 <p>依旧是除了年岁啥也没长……</p>
 <p>最近发生的大事，有时候反应迟钝，好像没有改变什么，有时候想起以前平凡的日常场景，会醒悟……啊，真的再也不能重现了啊。</p>
 <p> </p>
@@ -108,7 +118,10 @@
         <link href="https://kamikk.github.io/post/rerere-restart/">
         </link>
         <updated>2021-08-13T15:32:29.000Z</updated>
-        <content type="html"><![CDATA[<p>时隔N久再一次对博客上心</p>
+        <summary type="html"><![CDATA[<p>时隔N久（划重点）再一次对博客上心</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>时隔N久（划重点）再一次对博客上心</p>
+<!-- more -->
 <p>由于之前的主机空间较小，wp程序实属太大所以打算换typecho（<del>其实就是馋人家主题</del>），于是就物色新主机，换新域名，换程序，折腾了一周多。</p>
 <p>鸡飞狗跳的过程嘛……</p>
 <p>1、说说功能。wp是有插件的，但是我感觉时不时就把程序搞崩的自己不太靠谱，于是各种搜索……光是折腾林木木大佬的哔哔就搞了两天（空闲时间太少惹T T），最终放弃折腾代码……（所以说能用插件解决的事为什么要用代码！）</p>
@@ -163,15 +176,12 @@
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://kamikk.github.io/post-images/1631290666351.jpeg" alt="" loading="lazy"></figure>
 <p>不，不是……↓↓</p>
 <figure data-type="image" tabindex="2"><img src="https://kamikk.github.io/post-images/1631290686269.jpg" alt="" loading="lazy"></figure>
-<p>今天久违的阴天！虽然只有半天没下雨！哈哈哈~ 但是也太棒啦~</p>
-<p>跑去了老远去的电影院刷了《死侍2》（全城还在排片的就剩2家影院了…）~oh I llllllllove it！可能因为先看了原版的关系。感觉剪了很多精彩内容……好吧大多是R级内容。可是那个开头剪了那么多！我还蛮喜欢开头的！尤其是死侍自杀的部分和交代为什么要自杀感觉剪了蛮多……</p>
+<p>今天久违的阴天！虽然只有半天没下雨！哈哈哈～但是也太棒啦～</p>
+<p>跑去了老远去的电影院刷了《死侍2》（全城还在排片的就剩2家影院了…）～oh I llllllllove it！可能因为先看了原版的关系。感觉剪了很多精彩内容……好吧大多是R级内容。可是那个开头剪了那么多！我还蛮喜欢开头的！尤其是死侍自杀的部分和交代为什么要自杀感觉剪了蛮多……</p>
 <p>对了，钢力士把电线ju进红坦克菊花的镜头被剪了，我觉得这个还蛮搞笑的哈哈哈……剪了有点可惜。啊，还有Wade模仿《本能》换腿，没剪但是打马赛克……醉惹哈哈哈哈哈！！好像是第一次在电影院看到打马赛克的电影</p>
 <p>另外补拍的30分钟就是死侍绑架那个人讲故事么？话说这人是谁……以及我并不是很喜欢这种讲故事来展开剧情的模式……这是在充当旁白吗还是？这样的话剧情会被打断哦，有种插播广告既视感-_-||。还有Wade最后和Vanessa团聚那里，我本来以为这个剧情不会被打断了吧，结果居然还是……说实话有点糟心耶……这旁白里面最搞笑的就是说想和马特呆萌fight但是不断被消音以至于色里色气那段了哈哈哈。</p>
-<p>然后。Wade和Vanessa在死后的世界（不知道叫什么就这样叫吧，emm死亡边缘？死亡边境？）终于团聚那段剧情又看哭我了！！这段我能看一百遍！！Vanessa拉着Wade带他穿过那层“边界”然后Wade恢复美貌，好感动TAT！！Wade问“Is this heaven?”（这里是天堂吗？），Vanessa回答“It is now.”（现在是了）啊啊啊！！超喜欢这两句台词！！超温暖的！！好心疼Wade啊，为什么要这样对他TAT，都重聚了还要为了剧情把他拉回去，Cable你出来我保证不打死你<br>
-<video id="video" controls="" preload="none"><br>
-<source id="mp4" src="http://www.irror.net/wp-content/uploads/2019/02/dp20190217.mp4"><br>
-</video></p>
-<iframe src="http://www.irror.net/wp-content/uploads/2019/02/dp20190217.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>然后。Wade和Vanessa在死后的世界（不知道叫什么就这样叫吧，emm死亡边缘？死亡边境？）终于团聚那段剧情又看哭我了！！这段我能看一百遍！！Vanessa拉着Wade带他穿过那层“边界”然后Wade恢复美貌，好感动TAT！！Wade问“Is this heaven?”（这里是天堂吗？），Vanessa回答“It is now.”（现在是了）啊啊啊！！超喜欢这两句台词！！超温暖的！！好心疼Wade啊，为什么要这样对他TAT，都重聚了还要为了剧情把他拉回去，Cable你出来我保证不打死你</p>
+<p><video id="video" controls="" preload="auto"><source id="mp4" src="http://www.irror.net/wp-content/uploads/2019/02/dp20190217.mp4"></video></p>
 <p>P.S.很喜欢死侍里的BGM！！很棒！！好听！！总感觉BGM好听也是死侍电影的特色呢……</p>
 <p>P.P.S.这个视频搞死我了QAQ传了好多遍都是只有声音没有画面，能够外链的网站又找不到，研究了半年又压缩重截了几遍终于成功了…… :cry</p>
 ]]></content>
