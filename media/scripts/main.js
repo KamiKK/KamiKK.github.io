@@ -199,6 +199,13 @@
 		
 
 	});
+	
+	//zoomjs
+	$(function(){
+        $(".content-article img").each(function(){
+        $(this).attr("data-action","zoom");
+        });
+        });
 
 
 }());
